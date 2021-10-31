@@ -29,7 +29,7 @@ public class AdminController {
 
     @GetMapping("/approveStatuses")
     public ResponseEntity<?> getApproveStatus(){
-        int count1 = 0;
+        int count1 = 0;//
         int count2 = 0;
         List<DownloadItem> downloadItems = approveStatusService.getApproveStatus();
         if(downloadItems.size() >= 0){
